@@ -1,0 +1,48 @@
+/* Reset styles */
+html,
+body,
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #283747; /* Changed the background color */
+}
+
+/* New font styles */
+.u-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff; /* Changed the text color */
+}
+
+/* New width styles */
+.u-width {
+  width: 90%; /* Changed the width value */
+}
+
+@media (min-width: 601px) {
+  .u-width {
+    width: 100%;
+  }
+}
+
+/* New hidden element styles */
+.hide {
+  display: none;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out; /* Changed the transition duration */
+}
+
+/* New disabled styles */
+.disable:hover {
+  cursor: not-allowed;
+  opacity: 0.7; /* Reduced the opacity on hover */
+}
